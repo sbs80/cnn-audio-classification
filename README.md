@@ -1,5 +1,5 @@
 # cnn-audio-classification
-Audio classification with PyTorch using a convolutional neural network applied to the UrbanSound8K data set.
+Audio classification with PyTorch using a convolutional neural network trained on the UrbanSound8K data set.
 
 For more details about the UrbanSound8K dataset see https://urbansounddataset.weebly.com/urbansound8k.html
 
