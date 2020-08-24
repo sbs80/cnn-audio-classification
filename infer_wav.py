@@ -6,7 +6,7 @@ This script uses a trained model to classify a single wav file according to the 
 
 For more details about the UrbanSound8K dataset see https://urbansounddataset.weebly.com/urbansound8k.html
 
-This script requires a CUDA enabled Pytorch installation as well as the 'torchaudio', 'pandas', 'tqdm' packages.
+This script requires a CUDA enabled Pytorch installation as well as the 'torchaudio' package.
 
 usage: python infer_wav.py -f <wav_file_name>
 
@@ -19,8 +19,6 @@ import os
 import torch
 import torch.nn as nn
 import torchaudio
-import pandas as pd
-from tqdm import tqdm
 
 from train import model
 from feature_extract import window_size
