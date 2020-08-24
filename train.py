@@ -82,10 +82,8 @@ def process_batch(batch):
         feature_tensor = batch[j][0]
         out_tensor = torch.tensor([batch[j][1]])
 
-        with torch.no_grad():
-
-            features.append(feature_tensor)
-            actual_classes.append(out_tensor)
+        features.append(feature_tensor)
+        actual_classes.append(out_tensor)
 
     features = torch.stack(features, 0).cuda()
     actual_classes = torch.stack(actual_classes).view(-1).cuda()
@@ -97,10 +95,9 @@ def process_batch(batch):
     predicted_classes = torch.argmax(outputs, 1)
 
     # Calculate accuracy of batch
-    with torch.no_grad():
-        total_count = len(batch)
-        correct_prediction_count = (predicted_classes == actual_classes).sum()
-        batch_accuracy = correct_prediction_count.item() / total_count
+    total_count = len(batch)
+    correct_prediction_count = (predicted_classes == actual_classes).sum()
+    batch_accuracy = correct_prediction_count.item() / total_count
 
     # Calculate loss of batch
     batch_loss=criterion(outputs, actual_classes)
