@@ -39,5 +39,6 @@ usage: python infer_wav.py -f <wav_file_name>
 
 # Requirements
 
-A CUDA enabled PyTorch installation
+A CUDA enabled PyTorch installation.
+
 torchaudio, pandas, tqdm
