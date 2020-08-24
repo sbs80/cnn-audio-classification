@@ -37,7 +37,7 @@ This script uses a trained model to classify a single wav file according to the 
 
 usage: python infer_wav.py -f <wav_file_name>
 
-# Results
+## Results
 
 Highest measured accuracy on folds 1-10 over 200 epochs, when the other 9 folds are used for training:
 
@@ -57,7 +57,7 @@ Highest measured accuracy on folds 1-10 over 200 epochs, when the other 9 folds 
 Average Accuracy: 77.8%
 Standard Deviation: 4.7%
 
-# Requirements
+## Requirements
 
 A CUDA enabled PyTorch installation.
 
