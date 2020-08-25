@@ -3,12 +3,6 @@ Audio classification with PyTorch using a convolutional neural network trained o
 
 For more details about the UrbanSound8K dataset see https://urbansounddataset.weebly.com/urbansound8k.html
 
-## Model Architecture
-
-<p align="center">
-<img src="model.png" width="850px"/>
-</p>
-
 This repository consists of three Python scripts:
 
 ## Feature Extraction
@@ -42,6 +36,12 @@ Use infer_wav.py to classify a single .wav file according to the categories defi
 This script uses a trained model to classify a single wav file according to the categories defined by the UrbanSound8K dataset. Currently the model used defaults to the model trained using folds 1-9 of the dataset. This is the default model that is trained and saved if the associated training script 'train.py' script is run successfully. Note that before this script can be run, the feature extraction script 'feature_extract' and the training script 'train.py' must first be run to train the model.
 
 usage: python infer_wav.py -f <wav_file_name>
+
+## Model Architecture
+
+<p align="center">
+<img src="model.png" width="850px"/>
+</p>
 
 ## Results
 
