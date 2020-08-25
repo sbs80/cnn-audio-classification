@@ -3,8 +3,6 @@ Audio classification with PyTorch using a convolutional neural network trained o
 
 For more details about the UrbanSound8K dataset see https://urbansounddataset.weebly.com/urbansound8k.html
 
-This repository consists of three Python scripts:
-
 ## Feature Extraction
 
 Use feature_extract.py first to extract features from the downloaded UrbanSound8K.
