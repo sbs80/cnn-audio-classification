@@ -117,7 +117,7 @@ def main(argv):
 
     try:
         opts, args = getopt.getopt(argv, "hf:",["valfold="])
-    except getopt.GetOptError:
+    except getopt.GetoptError:
         print("usage: python train.py -f <validition fold number (1-10)>")
         sys.exit(2)
 
