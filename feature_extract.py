@@ -96,7 +96,7 @@ def main(argv):
     try:
         torch.save(features, features_file_name)
     except:
-        print("Error: couldn't save features to file.")
+        print("Error: couldn't save features to file.") 
         sys.exit(1)
 
     print("Feature extraction successful!")
