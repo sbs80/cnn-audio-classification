@@ -91,12 +91,12 @@ def main(argv):
         if(file_features.isnan().any()):
             bad_data_count = bad_data_count + 1
         else:
-            features.append([file_features, label, fold_no])    
+            features.append([file_features, label, fold_no])
 
     try:
         torch.save(features, features_file_name)
     except:
-        print("Error: couldn't save features to file.") 
+        print("Error: couldn't save features to file.")
         sys.exit(1)
 
     print("Feature extraction successful!")
